@@ -170,7 +170,7 @@ ___
 - lembrando que **não podem haver ciclos!!**
 
 Exemplo de Algoritmo de Kruskal:
-<img src="/home/eduardo/OneDrive/3° Semestre/ALEST II/Grafos/Images/WhatsApp Image 2024-06-29 at 12.17.16.jpeg" width=900>
+<img src="/Images/MST.jpeg" width=900>
 
 ### Algoritmo de Prim
 - começa pela aresta menos custosa
@@ -235,26 +235,26 @@ ___
 **Regra 1 Forward:**
 - propaga o tempo de uma tarefa para as demais
 
-<img src="/home/eduardo/OneDrive/3° Semestre/ALEST II/Grafos/Images/Screenshot from 2024-06-23 21-44-03.png" width= 500>
+<img src="/Images/ForwardRule1.png" width= 500>
 
 **Regra 2 Forward:**
 - propaga o **maior** numero para a proxima tarefa
 
-<img src="/home/eduardo/OneDrive/3° Semestre/ALEST II/Grafos/Images/Screenshot from 2024-06-23 21-47-27.png" width= 500>
+<img src="/Images/ForwardRule2.png" width= 500>
 
 **Regra 1 Backward:**
 - propaga o tempo de uma tarefa para as demais
-<img src="/home/eduardo/OneDrive/3° Semestre/ALEST II/Grafos/Images/Screenshot from 2024-06-23 21-51-53.png" width= 500>
+<img src="/Images/BackwardRule1.png" width= 500>
 
 **Regra 2 Backward:**
 - propaga o **menor** numero para a proxima tarefa
-<img src="/home/eduardo/OneDrive/3° Semestre/ALEST II/Grafos/Images/Screenshot from 2024-06-23 21-50-33.png" width= 500>
+<img src="/Images/BackwardRule2.png" width= 500>
 
 >Se a diferença entre o *start time* e o *finish time* for == 0, a tarefa é **crítica**. Se a diferença for != 0, a tarefa é não crítica.
 
 **Exemplo:**
 
-<img src="/home/eduardo/OneDrive/3° Semestre/ALEST II/Grafos/Images/Screenshot from 2024-06-23 22-08-09.png" width=600>
+<img src="/Images/CriticalPath.png" width=600>
 
 ___
 
