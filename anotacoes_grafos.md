@@ -170,7 +170,7 @@ ___
 - lembrando que **não podem haver ciclos!!**
 
 Exemplo de Algoritmo de Kruskal:
-<img src="/Images/MST.jpeg" width=900>
+<img src="https://raw.githubusercontent.com/eduardo-de-bastiani/Grafos/main/Images/MST.jpeg" width=900>
 
 ### Algoritmo de Prim
 - começa pela aresta menos custosa
@@ -235,16 +235,16 @@ ___
 **Regra 1 Forward:**
 - propaga o tempo de uma tarefa para as demais
 
-<img src="/Images/ForwardRule1.png" width= 500>
+<img src="https://raw.githubusercontent.com/eduardo-de-bastiani/Grafos/main/Images/ForwardRule1.png" width= 500>
 
 **Regra 2 Forward:**
 - propaga o **maior** numero para a proxima tarefa
 
-<img src="/Images/ForwardRule2.png" width= 500>
+<img src="https://raw.githubusercontent.com/eduardo-de-bastiani/Grafos/main/Images/ForwardRule2.png" width= 500>
 
 **Regra 1 Backward:**
 - propaga o tempo de uma tarefa para as demais
-<img src="/Images/BackwardRule1.png" width= 500>
+<img src="https://raw.githubusercontent.com/eduardo-de-bastiani/Grafos/main/Images/BackwardRule1.png" width= 500>
 
 **Regra 2 Backward:**
 - propaga o **menor** numero para a proxima tarefa
@@ -254,7 +254,7 @@ ___
 
 **Exemplo:**
 
-<img src="/Images/CriticalPath.png" width=600>
+<img src="https://raw.githubusercontent.com/eduardo-de-bastiani/Grafos/main/Images/CriticalPath.png" width=600>
 
 ___
 
