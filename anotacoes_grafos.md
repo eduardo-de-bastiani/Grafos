@@ -248,7 +248,7 @@ ___
 
 **Regra 2 Backward:**
 - propaga o **menor** numero para a proxima tarefa
-<img src="/Images/BackwardRule2.png" width= 500>
+<img src="https://raw.githubusercontent.com/eduardo-de-bastiani/Grafos/main/Images/BackwardRule2.png" width= 500>
 
 >Se a diferença entre o *start time* e o *finish time* for == 0, a tarefa é **crítica**. Se a diferença for != 0, a tarefa é não crítica.
 
