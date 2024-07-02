@@ -91,12 +91,7 @@ ___
 - marca um vértice como visitado, e recursivamente visita o vértice adjacente (vizinho) não marcado (UM POR VEZ) até ficar 'done'
 - para procuramos a origem, começamos no vértice de destino, e vemos a coluna EdgeTo() que diz de qual vértice viemos
 > estruturas usadas: **marked[]** e **edgeTo[]**
-
-
-
-
-
-
+___
 
 ## BUSCA EM LARGURA (BFS)
 
@@ -110,7 +105,7 @@ ___
 - distTo[] é a distância até a origem (primeiro vértice visitado)
 - não há repetições
 - BFS se preocupa com o caminho com menos vértices (não necessariamente o mais curto)!!
-> estruturas usadas: **edgeTo[]**,**distTo[]** e **queue**
+> estruturas usadas: marked, **edgeTo[]**, **distTo[]** e **queue**
 - exemplo de BFS: grafo do Kevin Bacon
 ___
 
@@ -179,7 +174,7 @@ ___
 
 Tipos:
 - **<ins>Single source:<ins>** de um vértice *s* para todos os demais (origem fixa)
-- **<ins>Single sink:<ins>** de cada vértice para um vértice específico *t* (detino fixo)
+- **<ins>Single sink:<ins>** de cada vértice para um vértice específico *t* (destino fixo)
 - **<ins>Source-sink:<ins>** de um vértice *s* para outro *t* (origem e destino fixos)
 - **<ins>All pairs:<ins>** entre todos os pares de vértices
 
@@ -245,3 +240,26 @@ ___
 **Exemplo:**
 
 <img src="/home/eduardo/OneDrive/3° Semestre/ALEST II/Grafos/Images/Screenshot from 2024-06-23 22-08-09.png" width=600>
+
+___
+
+# Fluxo em Redes 
+
+- fluxo máximo em um grafo
+- usa DFS
+
+## Ford-Fulkerson
+
+Para fazermos operações, as arestas devem ser:
+
+- não completas em **forward**
+
+- não vazias em **backward**
+
+Passos para o Ford-Fulkerson:
+
+1. encontrar um caminho
+2. descobrir o gargalo (fluxo máximo de todas as arestas do caminho)
+3. computar o caminho
+
+> O fluxo máximo será a soma das arestas que chegam no ponto *t* (terminal)
