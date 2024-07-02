@@ -246,15 +246,16 @@ ___
 # Fluxo em Redes 
 
 - fluxo máximo em um grafo
+- source-sink (de um ponto *'s'* a um ponto *'t'*)
 - usa DFS
 
 ## Ford-Fulkerson
 
-Para fazermos operações, as arestas devem ser:
+Para um caminho existir, as arestas devem ser:
 
 - não completas em **forward**
 
-- não vazias em **backward**
+- não vazias em **backward** (podemos remover de arestas backward se estiverem no caminho)
 
 Passos para o Ford-Fulkerson:
 
@@ -262,4 +263,4 @@ Passos para o Ford-Fulkerson:
 2. descobrir o gargalo (fluxo máximo de todas as arestas do caminho)
 3. computar o caminho
 
-> O fluxo máximo será a soma das arestas que chegam no ponto *t* (terminal)
+> O **fluxo máximo** será a **soma das arestas que chegam no ponto *'t'*** (terminal)
