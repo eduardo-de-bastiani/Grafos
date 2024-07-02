@@ -128,6 +128,21 @@ ___
 - **<ins>Ordem Topológica<ins>** é o **reverso** do pós ordem. Fazemos o caminho inverso e descobrimos qual a ordem de precedência das arestas.
 	- não há problema haver mais de um final
 >estruturas usadas: marked[]
+___
+
+## Como Saber se um Grafo é Fortemente Conexo? ߷
+
+Primeiramente...
+
+- **<ins>Grafo Conexo:<ins>** grafo NÃO dirigido em que todos os vértices são acessíveis a partir de qualquer vértice
+- **<ins>Grafo Fortemente Conexo<ins>**: grafo dirigido em que todos os vértices são acessíveis a partir de qualquer vértice
+
+Visto isso, usamos o **Algoritmo de Kosaraju**:
+ 
+- fazemos uma **DFS** e anotamos a **Pós Ordem**
+- invertemos as arestas
+- fazemos novamente a **DFS**, agora na **ordem topológica**
+- se todos os vértices na segunda DFS forem alcançados a partir do primeiro vértice, é **fortemente conexo**!
 	
 ___
 
